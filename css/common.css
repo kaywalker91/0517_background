@@ -1,0 +1,81 @@
+@charset "uft-8";
+/* 문서에 최상단에 위치하게 할것 */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* 패딩이나 마진을 키우더라도 박스크기가 커지는 걸 막을 수 있다 */
+}
+
+body
+{
+    color: #333;
+}
+
+a
+{
+    text-decoration: none;
+    color: #333;
+}
+
+table
+{
+    border-collapse: collapse;
+}
+
+/* CSS reset */
+
+#box1
+{
+    background-color: rgb(255,100,100);
+    background-image: url(../images/img.jpg);
+    background-repeat: no-repeat;
+
+    background-position: calc(100% - 20px) center;
+    /* 배경의 x,y축의 위치 설정 */
+
+    background-size: contain;
+    /* 종횡비를 유지하며 채운다 */
+
+    opacity: 0.5;
+    /* 글자까지 투명하게 만드는 코드 */
+
+    width: 200px;
+    height: 200px;
+}
+
+#icon1
+{
+    width: 100px;
+    height: 70px;
+    background-image: url(../images/sp1.png);
+    background-repeat: no-repeat;
+    background-position: 0 -350px;
+
+}
+
+#box2
+{
+    background-color: rgb(255,100,100);
+    background-image: url(../images/img2.jpg);
+    background-repeat: repeat;
+
+    width: 200px;
+    height: 200px;
+}
+
+#box3
+{
+    background-color: rgba(255,100,100,0.5);
+    background-image: url(../images/cat.jpg);
+    background-repeat: repeat;
+
+    background-size: cover;
+    /* 이미지를 최대로하여 박스를 채운다 */
+    background-position: center;
+
+    width: 200px;
+    height: 200px;
+}
+
